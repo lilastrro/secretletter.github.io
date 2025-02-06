@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Mini Games for My GF</title>
+    <link rel="stylesheet" href="miniGames.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.19.1/cdn/themes/light.css" />
+    <script type="module"
+        src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.19.1/cdn/shoelace-autoloader.js"></script>
+        <link rel="canonical" href="https://sharkiller.ddns.net/nopixel_minigame/thermite/" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/solid.css" crossorigin="anonymous">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-52394643-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-52394643-1');
+        </script>
+
+</head>
+
+<body>
+    <!-- <h1>Mini Games 💖</h1> -->
+    <div class="gamesBtn">
+        <!-- <button onclick="unlockNextLevel()">Dev Btn</button>
+        <button onclick="canvas.remove();">close Btn</button>
+        <button onclick="nextGamePlatfrom.remove(); unlockNextLevel();">finish maze Btn</button>
+        <br> -->
+        <sl-button onclick="startGame(1)" variant="primary" size="small" outline pill>Love Catcher</sl-button>
+        <sl-button onclick="startGame(3)" variant="primary" size="small" outline pill id="typingChallenge"
+            disabled>Typing Challenge</sl-button>
+        <sl-button onclick="startGame(4)" variant="primary" size="small" outline pill id="loveMaze" disabled>Love
+            Maze</sl-button>
+        <sl-button onclick="startGame(7)" variant="primary" size="small" outline pill id="LovePower" disabled>Love
+            Power</sl-button>
+        <sl-button onclick="startGame(10)" variant="primary" size="small" outline pill id="breakTheIce" disabled>Break
+            the Data</sl-button>
+    </div>
+
+    <canvas id="gameCanvas" width="320" height="480"></canvas>
+
+    <section id="page" style="display: none;">
+        <div id="mazeContainer">
+            <canvas id="mazeCanvas" height="200" width="200"></canvas>
+        </div>
+        <div id="menu">
+            <sl-button circle size="large" id="up">
+                <sl-icon name="arrow-up" label="Settings"></sl-icon>
+            </sl-button>
+            <br>
+            <sl-button circle size="large" id="left">
+                <sl-icon name="arrow-left" label="Settings"></sl-icon>
+            </sl-button>
+            <sl-button circle size="large" id="down">
+                <sl-icon name="arrow-down" label="Settings"></sl-icon>
+            </sl-button>
+            <sl-button circle size="large" id="right">
+                <sl-icon name="arrow-right" label="Settings"></sl-icon>
+            </sl-button>
+        </div>
+    </section>
+
+    <p style="display: none;" class="lovepowerConatiner">our love power: <span id="lovepower"></span></p>
+
+    <section id="clickerGameSec" style="display: none;">
+        <h3>This is Our Love Power click to Increase power LvL</h3>
+        <img src="heart.png"
+            draggable="false" class="heartImg">
+        <h4 id="counter"></h4>
+    </section>
+
+    <section class="vault" style="display: none;">
+        <div class="options" style="display: none;">
+            <div class="option speed">
+                <label for="speed">Speed:</label>
+                <input id="speed" type="range" value="8" min="4" max="30" autocomplete="off">
+                <div class="speed_value">8s</div>
+            </div>
+            <div class="option game_mode">
+                <span>Mode:</span>
+                <button class="button active" data-mode="jewelry">Vault | Gruppe 6</button>
+                <button class="button" data-mode="jewelry">Jewelry | 24/7 Safe</button>
+            </div>
+        </div>
+        <div class="minigame">
+            <div class="splash">
+                <div class="fa hacker">&#xf21b;</div>Remote Sequencing Required
+            </div>
+            <div class="groups hidden"></div>
+        </div>
+        <div class="restart" style="display: none;"><button class="btn_again">AGAIN!</button></div>
+    </section>
+
+</body>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/react/16.13.0/umd/react.production.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.13.0/umd/react-dom.production.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js'></script>
+<script src="miniGames.js"></script>
+
+</html>
