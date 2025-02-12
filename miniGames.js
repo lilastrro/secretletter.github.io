@@ -213,13 +213,13 @@ function loveCatcher() {
 
 
 function typingChallenge() {
-    let words = ["مانانی", "فندق", "Five feets apart", "20"];
+    let words = ["مانانی", "فندق", "five feet apart", "20"];
     console.log(words);
 
-    let input = prompt("لقب مانی چیه؟: ");
+    let input = prompt("لقب مانی چیه؟ ");
     if (input === words[0]) {
         alert("Correct!");
-        let input = prompt("لقب هستی چیه؟: ");
+        let input = prompt("لقب هستی چیه؟ ");
         if (input === words[1]) {
             alert('Correct!');
             let input = prompt("اولین فیلمی که باهم دیدیم: ");
@@ -846,7 +846,7 @@ let best_time = 99.999;
 
 let mode = 'jewelry';
 let mode_data = {};
-mode_data['jewelry'] = [23, 6];
+mode_data['jewelry'] = [23, 7];
 
 // Get max streak from cookie
 const regex = /max-streak_thermite=([\d]+)/g;
