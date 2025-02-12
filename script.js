@@ -15,7 +15,7 @@ window.addEventListener("DOMContentLoaded", () => {
 	const today = new Date();
 	const month = today.getMonth() + 1; // چون getMonth() از 0 شروع میشه، باید 1 اضافه کنیم
 	const day = today.getDate();
-	let flag = true;
+	let flag = false;
 
 	if (flag) {
 		console.log("ولنتاین مبارک! ❤️");
@@ -51,7 +51,7 @@ window.addEventListener("DOMContentLoaded", () => {
 			const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
 			const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
 
-			timer.innerText = `زمان باقی‌مانده تا ولنتاین : \n ${days} روز \n ${hours} ساعت \n ${minutes} دقیقه \n ${seconds} ثانیه`;
+			timer.innerText = `(: ولنتاین بعدی میبینمت بیب `;
 		}
 
 		updateTimer();
