@@ -1051,6 +1051,6 @@ function endGames() {
     localStorage.setItem('endGameValue', true)
     confirm('great job baby you defeated the hacker now you can open your gift press ok')
     if(confirm) {
-        location.replace('http://127.0.0.1:5500/')
+        location.replace('https://lilastrro.github.io/secretletter.github.io/')
     }
 }
