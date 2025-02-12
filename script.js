@@ -332,7 +332,7 @@ window.onload = function () {
 				if (confirm || !confirm) {
 					confirm(`Mani:\n Oh No The Hackers Steal Your Gift \n Let's Take It Back Together Baby :)❤`)
 					if (confirm || !confirm) {
-						location.pathname = 'minigames.html'
+						location.replace('https://lilastrro.github.io/secretletter.github.io/minigames.html')
 					}
 				}
 			}
