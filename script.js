@@ -15,7 +15,7 @@ window.addEventListener("DOMContentLoaded", () => {
 	const today = new Date();
 	const month = today.getMonth() + 1; // چون getMonth() از 0 شروع میشه، باید 1 اضافه کنیم
 	const day = today.getDate();
-	let flag = false;
+	let flag = true;
 
 	if (flag) {
 		console.log("ولنتاین مبارک! ❤️");
