@@ -1,7 +1,7 @@
 const book = $('#book');
 const flipSound = document.getElementById('flipSound');
 const dopamineSong = document.getElementById('dopamineSong');
-const flag = true
+const flag = false
 
 if (!flag) {
     document.body.innerHTML = `
