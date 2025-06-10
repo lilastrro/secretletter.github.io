@@ -26,24 +26,18 @@ book.turn({
     }
 });
 
-
 function checkThePage() {
     const currentPage = book.turn('page');
 
-    const dopaminePages = [1, 5];
-
-    if (dopaminePages.includes(currentPage)) {
+    if (currentPage == 1 || currentPage == 2) {
         if (dopamineSong.paused) {
             dopamineSong.currentTime = 0;
+            dopamineSong.volume = 0.1; // تنظیم حجم صدا
             dopamineSong.play().catch(err => {
                 console.warn('صدا پخش نشد:', err);
             });
         }
     } else {
-        if (!dopamineSong.paused) {
-            dopamineSong.pause();
-            dopamineSong.currentTime = 0;
-        }
-        // console.log(`صفحه فعلی: ${currentPage}`);
+        console.log(`صفحه فعلی: ${currentPage}`);
     }
 }
